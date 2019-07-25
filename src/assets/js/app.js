@@ -15,3 +15,7 @@ require('foundation-sites');
 
 
 $(document).foundation();
+
+let dog = document.querySelectorAll(".button");
+
+console.log(dog);
