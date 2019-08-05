@@ -32,3 +32,11 @@
 3. Practice handle bars, panini, yml, and pulling data from JSON in sandbox
 4. In Zurb Sandbox used what you learned about panini and handlebars to optimize navigation
 5. Create a custom panini helper
+
+## Handlebars videos
+1. https://www.youtube.com/user/richardfinelli/playlists
+2. https://www.youtube.com/watch?v=wSNa5b1mS5Y
+3. https://www.youtube.com/watch?v=4HuAnM6b2d8
+
+## Glup.js
+1. https://www.youtube.com/watch?v=1rw9MfIleEg
