@@ -35,7 +35,7 @@
 5. Create a custom panini helper
 
 ## Handlebars videos
-1. https://www.youtube.com/user/richardfinelli/playlists
+1. https://www.youtube.com/user/richardfinelli/playlists (https://bitbucket.org/richfinelli/handlebars-course/src/master/)
 2. https://www.youtube.com/watch?v=wSNa5b1mS5Y
 3. https://www.youtube.com/watch?v=4HuAnM6b2d8
 

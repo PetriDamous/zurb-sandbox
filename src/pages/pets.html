@@ -1,28 +1,31 @@
+{{!--Basic Handlebars Exercise--}}
+
 <div class="page-wrap">
   <h1>Handlebars Tutorial</h1>
 
-  <div id="pets-container">
-    {{#each pets.pets}}
-        <div class="pet">
-            <div class="photo-column">
-                <img src="{{photo}}">
-            </div>
+    <div id="pets-container">
+        {{#each pets.pets}}
+            <div class="pet">
+                <div class="photo-column">
+                    <img src="{{photo}}">
+                </div>
 
-            <div class="info-column">
-                <h2>{{name}} <span class="species">({{species}})</span></h2>
+                <div class="info-column">
+                    <h2>{{@first}} {{@last}} {{@index}} {{name}} <span class="species">({{species}})</span></h2>
 
-                {{#if favFoods}}
-                    <h4 class="headline-bar">Fav Foods</h4>                
-                    <ul class="favorite-foods">
-                        {{#each favFoods}}
-                            <li>{{{this}}}</li>
-                        {{/each}}                
-                    </ul>
-                {{/if}}
+                    {{#if favFoods}}
+                        <h4 class="headline-bar">Fav Foods</h4>                
+                        <ul class="favorite-foods">
+                            {{#each favFoods}}
+                                <li>{{{this}}}</li>
+                            {{/each}}                
+                        </ul>
+                    {{/if}}
+                </div>
             </div>
-        </div>
-    {{/each}}
-  </div>
+        {{/each}}
+
+    </div>
 
 </div>
 
@@ -30,5 +33,72 @@
     #each acts like a loop and will loop through our data from the .json file
     
     double currely braces Will interpate the data literlly if you want to include html code stored in the .json file use triple currly braces
+
+    #each will iterate over our json object similar to a loop (you can use javascript objects or yml)
+
+    #each has a few helpers 
+        1. @first -> Will return true if the object is first in array or false if it is not first
+        2. @last -> Same as @first but detirmines if object is last or not
+        3. @index -> The index of the object in array
+    
+    this helper will return the value of what we are iterating over. Seems to be similar to JavaScripts this keyword
+
+    #if is the same as JavaScript if statement. 
+        1. Takes a condition like anyother programming language
+        2. Condition is usually an object property from an array or json object
+    
+    #else if is the same as Javascript else if statement        
+        1. Takes a condition like anyother programming language
+        2. Condition is usually an object property from an array or json object
+
+    else is the same as JavaScript else statement
+        1. Used after #if or #else if
+
+    #unless is like #if but does the oposite. If the block evaluates to false then code is ran. If true then the code is not ran.
+
+    Block helpers begin with # and have a closing helper similar to html
+
+    // Nested Data vide 6 //
+
+    You can access nested data similar to a Javascript object
+
+        JSON property.JSON property.JSON property we want (Like working with JavaScript object)
+    or
+
+        JSON property/JSON property/JSON property we want (Works the same but looks like a file system structure)
+
+    #with helper allows us to access specific JSON data
+        1. Takes a param that will represent the first JSON property we want to access
+        2. After that any double or triple curely braces will represent nested JSON properties that are under
+           the main property that was a param with #with helper
+    
+    You can use folder sysntax not only drill into the parent JSON property but also the 
+    escape or get out of the parent property similar to leaving a parent folder to access
+    a file outside of the parent folder
+
+    ../ goes up one level while /  will drill down
+
+    // Types of helpers //
+
+    2 types of helpers in handlebars
+        1. Expressions
+        2. Blocks
+
+    Expressions are helpers that bring in data from JSON or yml file.
+    Wrapped in double curles only
+
+    Block helpers 
+    Examples: #if, #each, #with (comes with handlebars)
+    Starts with # wrapped in double curles must be closed out similar to html closing tags
+
+    // Custom Helpers Expressions //
+
+    We can also make our own custom Expression helpers
+
+    
+    
+
+
+    
 
 -->
