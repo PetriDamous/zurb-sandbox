@@ -8,6 +8,7 @@
 ## Video tutorials
 1. Finish Foundation 6 lynda.com and get the cert
 2. Find Sass on lynda.com and get the cert
+3. https://www.youtube.com/watch?v=2QcpR6cHpnk (finish this)
 
 ## Panni and Handlebar
 1. Find other Panni and handlebar tutorials outside of Zurb
@@ -16,6 +17,9 @@
 4. See if you need to know how to yml for enjecting data into handlebars (I think we are going to use JSON)
 7. Do Brads npm crash course
 8. Learn gulpe
+
+#Yaml
+1. Basic Docs (https://gettaurus.org/docs/YAMLTutorial/)
 
 ## Components
 1. Go through Mike's documentation and figure out what components to learn
