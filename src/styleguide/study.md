@@ -46,3 +46,10 @@
 
 ## Glup.js
 1. https://www.youtube.com/watch?v=1rw9MfIleEg
+
+## Centering
+1. https://designshack.net/articles/css/how-to-center-anything-with-css/
+2. https://css-tricks.com/snippets/css/centering-a-website/
+3. http://maxdesign.com.au/articles/center/
+4. http://www.corelangs.com/css/box/center-div.html
+5. https://stackoverflow.com/questions/2279519/how-to-get-main-div-container-to-align-to-centre
