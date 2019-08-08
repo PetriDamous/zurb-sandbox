@@ -37,6 +37,7 @@
 3. Practice handle bars, panini, yml, and pulling data from JSON in sandbox
 4. In Zurb Sandbox used what you learned about panini and handlebars to optimize navigation
 5. Create a custom panini helper
+6. Look at BOLC and Captivate courses and recreate the layout and make them responsive. (Top Priority)
 
 ## Handlebars videos
 1. https://www.youtube.com/user/richardfinelli/playlists (https://bitbucket.org/richfinelli/handlebars-course/src/master/)

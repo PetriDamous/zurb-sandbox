@@ -1,33 +1,37 @@
 {{!--Basic Handlebars Exercise--}}
 
-<div class="page-wrap">
-  <h1>Handlebars Tutorial</h1>
-
-    <div id="pets-container">
-        {{#each pets.pets}}
-            <div class="pet">
-                <div class="photo-column">
-                    <img src="{{photo}}">
-                </div>
-
-                <div class="info-column">
-                    <h2>{{@first}} {{@last}} {{@index}} {{name}} <span class="species">({{species}})</span></h2>
-
-                    {{#if favFoods}}
-                        <h4 class="headline-bar">Fav Foods</h4>                
-                        <ul class="favorite-foods">
-                            {{#each favFoods}}
+<div class="grid-container">
+    <div class="grid-x grid-margin-x">
+            {{#each residentEvil.reChars}}
+            <div class="cell medium-5 large-6">
+                    <div class="card charCard">
+                            <div class="card-divider charCard__header">
+                              {{name}}
+                            </div>
+                            <div class="charCard__photo">
+                                <img src="{{photo}}">
+                            </div>
+                
+                            <div class="card-section charCard__section">
+                              <p>First Apperance: {{firstApp}}</p>
+                              <p>Last Apperance: {{lastApp}}</p>
+                              Occupation:
+                              {{#each occupation}}
+                              <ul>
                                 <li>{{{this}}}</li>
-                            {{/each}}                
-                        </ul>
-                    {{/if}}
-                </div>
+                              </ul>
+                              {{/each}}
+                
+                              <p>Status: {{status}}</p>
+                            </div>
+                        </div>
             </div>
-        {{/each}}
-
+            
+            {{/each}}
     </div>
-
+    
 </div>
+
 
 <!--
     #each acts like a loop and will loop through our data from the .json file
