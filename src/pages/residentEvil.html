@@ -1,20 +1,20 @@
 {{!--Basic Handlebars Exercise--}}
 
-<div class="grid-container">
+<div class="grid-container charCard__container">
     <div class="grid-x grid-margin-x">
             {{#each residentEvil.reChars}}
-            <div class="cell medium-6">
+            <div class="cell small-12 medium-6">
                     <div class="card charCard">
                             <div class="card-divider charCard__header">
-                              {{name}}
+                                <p class="charCard__text">{{name}}</p>
                             </div>
-                            <div class="card-image charCard__photo">
-                                <img src="{{photo}}">
-                            </div>
+                            
+                            <img src="{{photo}}" class="charCard__image">
+                            
                 
                             <div class="card-section charCard__section">
-                              <p>First Apperance: {{firstApp}}</p>
-                              <p>Last Apperance: {{lastApp}}</p>
+                              <p class="charCard__text">First Apperance: {{firstApp}}</p>
+                              <p class="charCard__text">Last Apperance: {{lastApp}}</p>
                               Occupation:
                               {{#each occupation}}
                               <ul>
@@ -22,7 +22,7 @@
                               </ul>
                               {{/each}}
                 
-                              <p>Status: {{status}}</p>
+                              <p class="charCard__text">Status: {{status}}</p>
                             </div>
                         </div>
             </div>
