@@ -15,14 +15,27 @@
                             <div class="card-section charCard__section">
                               <p class="charCard__text">First Apperance: {{firstApp}}</p>
                               <p class="charCard__text">Last Apperance: {{lastApp}}</p>
+                              
                               Occupation:
-                              {{#each occupation}}
-                              <ul>
-                                <li>{{{this}}}</li>
+                              <ul></ul>
+                              {{#each occupation}}                              
+                                <li class="charCard__text--list">{{{this}}}</li>
                               </ul>
                               {{/each}}
-                
+                              
                               <p class="charCard__text">Status: {{status}}</p>
+                              
+                              {{#if test1}}
+                                <p class="charCard__text">Test1: {{test1}}</p>
+                              {{/if}}
+
+                              <p class="charCard__text">Test2: {{#if test2}}{{test2}}{{else}}not wroking{{/if}}</p>
+
+                              <p class="charCard__text">Test3: {{#if test2}} {{test2}} {{else if firstApp}} {{default}} {{else}}not wroking{{/if}}</p>
+                              
+
+                              <p class="charCard__text">Test4: {{#unless test4}} No test4 {{else}} {{test4}} {{/unless}}</p>
+
                             </div>
                         </div>
             </div>
@@ -34,6 +47,14 @@
 
 
 <!--
+    Handlebars 
+        1. Logicless templetaing language
+        2. An extenstion of the Mustache templating language
+        3. Keeps the view and the code separated
+
+    
+    ############ Each Helper #############
+
     #each acts like a loop and will loop through our data from the .json file
     
     double currely braces Will interpate the data literlly if you want to include html code stored in the .json file use triple currly braces
@@ -47,16 +68,25 @@
     
     this helper will return the value of what we are iterating over. Seems to be similar to JavaScripts this keyword
 
+    ############ If - Else Helper #############
+
     #if is the same as JavaScript if statement. 
         1. Takes a condition like anyother programming language
         2. Condition is usually an object property from an array or json object
+
+    Note: undefined will only work if we are using a JavaScript object and not a JSON file.    
     
     #else if is the same as Javascript else if statement        
         1. Takes a condition like anyother programming language
         2. Condition is usually an object property from an array or json object
 
+    Note: false, undefined (javascript object only), null, and an empty string will all evaluate to false    
+
     else is the same as JavaScript else statement
         1. Used after #if or #else if
+
+    
+    ######## Unless Helper ###########
 
     #unless is like #if but does the oposite. If the block evaluates to false then code is ran. If true then the code is not ran.
 

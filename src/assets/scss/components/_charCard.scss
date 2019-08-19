@@ -22,11 +22,25 @@
         padding-left: 1rem;
     }
 
-    &__text:not(:last-child) {
-        border-bottom: 1px solid grey;
-        padding-bottom: .2rem; 
-        width: 85%;
-    }
+    &__text {        
+        color: blue;
+        &:not(:last-child) {
+            border-bottom: 1px solid grey;
+            padding-bottom: .2rem; 
+            width: 85%;
+            
+        }
+
+        &--list {            
+            
+            & li:last-child {
+                border-bottom: 1px solid grey;
+                margin-bottom: .2rem;
+            }
+        }
+
+       
+    }    
 
     @media screen and (max-width: 39.99875em) {
         // &__text {
@@ -44,11 +58,6 @@
         &__text:not(:last-child) {
             width: 66%;
         }
-    }   
-
-    
-
-
-
+    }
 }
 

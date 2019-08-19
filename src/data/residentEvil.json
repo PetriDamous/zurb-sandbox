@@ -6,7 +6,10 @@
       "lastApp" : "Resident Evil 7: Biohazard",
       "occupation" : ["<strong>U.S. Air Force</strong> pilot (1990-1995)", "<strong>S.T.A.R.S. Alpha Team</strong> point man (1996-1998)", "<strong>BSAA</strong> operative (2003-)"],
       "status" : "Alive",
-      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      "default" : "default test",
+      "test1" : null,
+      "test2" : null      
     },
     {
       "name" : "Jill Valentine",
@@ -14,7 +17,10 @@
       "lastApp" : "Resident Evil: Revelations 2",
       "occupation" : ["<strong>S.T.A.R.S. Alpha Team</strong> Rear Security (1996-1998)", "<strong>Private Anti-Biohazard Service</strong> operative (2003)", "<strong>BSAA</strong> operative (2005-)"],
       "status" : "Alive",
-      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      "default" : "default test",
+      "test1" : false,
+      "test2" : false      
     },
     {
       "name" : "Leon S. Kennedy",
@@ -22,7 +28,10 @@
       "lastApp" : "Resident Evil 2 (Remake)",
       "occupation" : ["<strong>RPD</strong> Police officer (1998)", "<strong>USSTRATCOM</strong> agent (1998-2011)", "<strong>DSO</strong> agent (2011-)"],
       "status" : "Alive",
-      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      "default" : "default test",
+      "test1" : "",
+      "test2" : ""      
     },
     {
       "name" : "Claire Redfield",
@@ -30,7 +39,11 @@
       "lastApp" : "Resident Evil 2 (Remake)",
       "occupation" : ["<strong>TerraSave</strong> member (2005-)"],
       "status" : "Alive",
-      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      "default" : "default test",
+      "test1" : "works",
+      "test2" : "works",
+      "test4" : "works"
     },
     {
       "name" : "Albert Wesker",
@@ -38,7 +51,11 @@
       "lastApp" : "Resident Evil: Revelations 2",
       "occupation" : ["<strong>Umbrella</strong> researcher/security officer (1978-1998)", "<strong>S.T.A.R.S.</strong> Captain (1996-1998)", "<strong>TRICELL</strong> researcher (2003-2009)"],
       "status" : "Deceased",
-      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      "default" : "default test",
+      "test1" : "works",
+      "test2" : "works",
+      "test4" : "works"
     },
     {
       "name" : "Barry Burton",
@@ -46,7 +63,23 @@
       "lastApp" : "Resident Evil: Revelations 2",
       "occupation" : ["<strong>US Air Force</strong> Pilot (formerly)", "<strong>S.T.A.R.S. Alpha Team</strong> Backup Man/Weapon Specialist (formerly)", "<strong>BSAA</strong> Advisor/Combat Specialist"],
       "status" : "Alive",
-      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      "default" : "default test",
+      "test1" : "works",
+      "test2" : "works",
+      "test4" : "works"
+    },
+    {
+      "name" : "Ada Wong",
+      "firstApp" : "Resident Evil 2 (Original)",
+      "lastApp" : "Resident Evil 2 (remake)",
+      "occupation" : "Double Agent",      
+      "status" : "Alive",
+      "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      "default" : "default test",
+      "test1" : "works",
+      "test2" : "works",
+      "test4" : "works"      
     }
   ]
 }
