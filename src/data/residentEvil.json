@@ -9,7 +9,12 @@
       "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
       "default" : "default test",
       "test1" : null,
-      "test2" : null      
+      "test2" : null,
+      "test5" : {
+        "firstApp" : "Resident Evil ps1",
+        "gun" : "bear",
+        "health" : "god like"
+      }      
     },
     {
       "name" : "Jill Valentine",
@@ -20,7 +25,12 @@
       "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
       "default" : "default test",
       "test1" : false,
-      "test2" : false      
+      "test2" : false,
+      "test5" : {
+        "firstApp" : "Resident Evil 2 ps1",
+        "gun" : "Berreta",
+        "health" : "not so good"
+      }      
     },
     {
       "name" : "Leon S. Kennedy",
@@ -31,7 +41,12 @@
       "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
       "default" : "default test",
       "test1" : "",
-      "test2" : ""      
+      "test2" : "",
+      "test5" : {
+        "firstApp" : "Resident Evil ps1",
+        "gun" : "deagle",
+        "health" : "pretty good"
+      }      
     },
     {
       "name" : "Claire Redfield",

@@ -17,6 +17,7 @@
                               <p class="charCard__text">Last Apperance: {{lastApp}}</p>
                               
                               Occupation:
+                              
                               <ul></ul>
                               {{#each occupation}}                              
                                 <li class="charCard__text--list">{{{this}}}</li>
@@ -35,6 +36,28 @@
                               
 
                               <p class="charCard__text">Test4: {{#unless test4}} No test4 {{else}} {{test4}} {{/unless}}</p>
+
+                              {{#if test5}}
+                              <p class="charCard__text">test5 firstapp: {{test5.firstApp}}</p>
+
+                              <p class="charCard__text">test5 gun: {{test5.gun}}</p>
+
+                              <p class="charCard__text">test5 health: {{test5.health}}</p>
+                              {{/if}}
+
+                              {{#if test5}}
+                              <p class="charCard__text">test6 firstapp: {{../test5/firstApp}}</p>
+                              <p class="charCard__text">test6 gun: {{test5/gun}}</p>
+                              <p class="charCard__text">test6 health: {{test5/health}}</p>
+                              {{/if}}
+
+                              {{#if test5}}
+                              {{#with test5}}
+                              <p class="charCard__text">test7 firstapp: {{../firstApp}}</p>
+                              <p class="charCard__text">test7 gun: {{gun}}</p>
+                              <p class="charCard__text">test7 health: {{health}}</p>
+                              {{/with}}
+                              {{/if}}
 
                             </div>
                         </div>
@@ -92,7 +115,7 @@
 
     Block helpers begin with # and have a closing helper similar to html
 
-    // Nested Data vide 6 //
+    ####### Working with so flat data video 9 ######
 
     You can access nested data similar to a Javascript object
 
@@ -112,6 +135,10 @@
 
     ../ goes up one level while /  will drill down
 
+    Note: I only got the ../ to work with using thhe #with helper
+
+    ######## Custom Helpers vid 10 ###########
+
     // Types of helpers //
 
     2 types of helpers in handlebars
@@ -128,6 +155,14 @@
     // Custom Helpers Expressions //
 
     We can also make our own custom Expression helpers
+
+    Note: Ask mike if you can make custom handlebar helpers in Zurb and how
+
+    ############ Event Delegation ###############
+
+    In jQuery the .on method can accept a second parameter that will delegate the event to an element
+    In order to work the second param must be an element (class, ID, or element selector)
+    Normally the second parameter would be our call back function unless we want to delegate the event to another element on the page
 
     
     
